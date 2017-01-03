@@ -22,7 +22,7 @@ prior_month = current_month - 1
 
 current_year = datetime.date.today().year
 prior_year = current_year
-if prior_month == 0
+if prior_month == 0:
 	prior_month = 12
 	prior_year =current_year-1
 
