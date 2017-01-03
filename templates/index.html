@@ -2,14 +2,34 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Hello, World!</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<title>Milestone: Stock Charting Demo with Bokeh</title>
+		<!--link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">-->
+		<!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script-->
+		<link rel=stylesheet type=text/css href='/static/flatly.css'>
 	</head>
 	<body>
-		<div>
-  			<h1>Hello, World!</h1>
+		<div class=page>
+  			<h1>Ticker Input</h1>
+  			<div class=metanav>
+
+    			<h4>Please enter a stock ticker below: eg. <i>SPX, GOOG, TSLA or LNKD</i>.</h4>
+
+    			<form id='input' method='post' action='index'>	
+	  			<p>
+					Ticker symbol: <input type='text' name='ticker' />
+	  			</p>
+				<h5><i>End of Day (Closing Price) data will be returned for the submitted ticker symbol</i></h5>
+
+	  			<p>
+					<!-- <input type="checkbox" name='features' value='Close'>Closing price<br>
+					<input type="checkbox" name='features' value='Adj. Close'>Adjusted closing price<br>
+					<input type="checkbox" name='features' value='Open'>Opening price<br>
+					<input type="checkbox" name='features' value='Adj. Open'>Adjusted opening price<br> -->
+	    			<input type="submit" value="Submit">
+	  			</p>
+				</form>
+
+  			</div>
 		</div>
 	</body>
 </html>
