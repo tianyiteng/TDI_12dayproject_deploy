@@ -38,7 +38,7 @@ def index():
 
 		ticker_data = quandl.get('WIKI/' + ticker, collapse='daily')
 
-		title = ('Closing Stock Price for 30 Days' + ticker + ', ' + str(prior_month) + '/' + str(prior_year) + ' - ' + str(current_month) + '/' + str(current_year))
+		title = ('Closing Stock Price for 30 Days: ' + ticker + ', ' + str(prior_month) + '/' + str(prior_year) + ' - ' + str(current_month) + '/' + str(current_year))
 
 		ts_plot = TimeSeries(ticker_data.Close[-30:], title = title, xlabel = 'Date', ylabel = 'Price ($ USD)')
 
